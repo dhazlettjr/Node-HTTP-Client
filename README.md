@@ -8,18 +8,24 @@ It would certainly be easier to test if you can grab the latest stock price, but
 
 # Expected:
 
-```$ ./stocks.js AAPL
-$123.45```
+```
+$ ./stocks.js AAPL
+$123.45
+```
 
 # Bonus
 Avoid using encoded characters in your url: %22%3A%5B%22c%22%5D%7D%5D%7D
 Full Destructuring on the API response object and http module
 Abstract a getJSON function. (This is good practice for when we write our own APIs):
 
-```const getJSON = (url, cb) => { ... }
-getJSON('http://example.com', data => { ... })```
+```
+const getJSON = (url, cb) => { ... }
+getJSON('http://example.com', data => { ... })
+```
 
 Promisify the getJSON function:
 
-```const getJSON = url => { ... }
-getJSON('http://example.com').then(data => { ... })```
+```
+const getJSON = url => { ... }
+getJSON('http://example.com').then(data => { ... })
+```
